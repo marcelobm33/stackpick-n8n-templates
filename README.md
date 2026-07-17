@@ -2,7 +2,7 @@
 
 Import-ready [n8n](https://n8n.io) workflows for the most expensive problem in any local business: **leads nobody answered**.
 
-These are the patterns running in production at a real multi-brand car dealership — every incoming lead answered on WhatsApp in under a minute, missed calls recovered automatically. Full write-up: [the car dealership AI stack](https://trystackpick.com/stacks/car-dealership-ai/).
+Reference patterns for WhatsApp lead response and follow-up. Configure credentials and validate each branch before production. Architecture: [car dealership AI stack](https://trystackpick.com/stacks/car-dealership-ai/).
 
 ## Free templates (`free/`)
 
