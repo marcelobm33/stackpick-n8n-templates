@@ -90,7 +90,7 @@ more depending on which one you picked.
 | [Wati](https://trystackpick.com/reviews/wati/) | $49/mo | per month, 5 users (Growth, billed annually) | No | 2026-07-01 |
 | [respond.io](https://trystackpick.com/reviews/respond-io/) | $79/mo | per month, 5 users (Starter, billed annually) | No | 2026-07-01 |
 
-Last verified: 2026-07-25. Prices change without notice — each row links to a review page
+Last verified: 2026-07-26. Prices change without notice — each row links to a review page
 carrying the source URL and check date.
 
 ## Cost calculators
@@ -102,10 +102,19 @@ Model your own volume instead of trusting list price:
 - [AI voice agent cost calculator](https://trystackpick.com/calculators/ai-voice-agent-cost/) — cost per minute vs a human answering
 - [Email marketing cost calculator](https://trystackpick.com/calculators/email-marketing-cost/) — cost by list size
 
+### Embed them on your own site (free)
+
+The WhatsApp and automation calculators ship as embeddable widgets — one iframe, no signup,
+no API key, no tracking scripts on your page. Numbers update whenever we re-verify vendor
+pricing, so there is nothing to maintain. Attribution link is the only condition.
+
+**[Get the embed snippet →](https://trystackpick.com/embed/)**
+
 ## Switching tools?
 
 - [Zapier alternatives](https://trystackpick.com/alternatives/zapier/) · [Make alternatives](https://trystackpick.com/alternatives/make/) · [n8n alternatives](https://trystackpick.com/alternatives/n8n/)
 - [Mailchimp alternatives](https://trystackpick.com/alternatives/mailchimp/) · [Wati alternatives](https://trystackpick.com/alternatives/wati/)
+- [BiteSpeed alternatives](https://trystackpick.com/alternatives/bitespeed/) — for a vendor that quotes only by sales call
 - [Full comparison index](https://trystackpick.com/compare/)
 
 ## Paid pack
