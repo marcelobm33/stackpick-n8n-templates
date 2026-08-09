@@ -8,6 +8,8 @@ Every price below is checked against the vendor's own pricing page and dated. No
 no affiliate-weighted rankings. Machine-readable copies: [JSON](data/pricing-index.json) ·
 [CSV](data/pricing-index.csv) · [live dataset](https://trystackpick.com/pricing-index/).
 
+**New original research:** [SaaS Pricing Snapshot — August 2026](https://trystackpick.com/reports/saas-pricing-august-2026/) analyzes the median entry price, free-plan availability and billing-unit mismatch across all 25 records. [Affiliate link status](https://trystackpick.com/partner-status/) identifies every commissioned and direct vendor link.
+
 ## Free templates (`free/`)
 
 | Template | What it does |
@@ -111,6 +113,7 @@ Model your own volume instead of trusting list price:
 - [Switch & Save](https://trystackpick.com/switch-and-save/) — compare a current bill against a migration path
 - [Plan Finders](https://trystackpick.com/plan-finder/) — match published capacity to monthly volume
 - [Download the CSV](https://trystackpick.com/data/pricing-index.csv) — entry price, billing unit, free-plan flag, verification date and vendor source
+- [Read the monthly pricing report](https://trystackpick.com/reports/saas-pricing-august-2026/) — findings and methodology from the current snapshot
 
 ### Embed them on your own site (free)
 
