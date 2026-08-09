@@ -5,7 +5,8 @@ business — **leads nobody answered** — plus a verified pricing index for 25 
 WhatsApp and email tools.
 
 Every price below is checked against the vendor's own pricing page and dated. No estimates,
-no affiliate-weighted rankings. Machine-readable copy: [`pricing-index.json`](https://trystackpick.com/data/pricing-index.json).
+no affiliate-weighted rankings. Machine-readable copies: [JSON](data/pricing-index.json) ·
+[CSV](data/pricing-index.csv) · [live dataset](https://trystackpick.com/pricing-index/).
 
 ## Free templates (`free/`)
 
