@@ -1,7 +1,7 @@
 # StackPick n8n Templates + SaaS pricing index
 
 Import-ready [n8n](https://n8n.io) workflows for the most expensive problem in any local
-business — **leads nobody answered** — plus a verified pricing index for 23 automation,
+business — **leads nobody answered** — plus a verified pricing index for 25 automation,
 WhatsApp and email tools.
 
 Every price below is checked against the vendor's own pricing page and dated. No estimates,
@@ -66,6 +66,7 @@ more depending on which one you picked.
 | [Mailchimp](https://trystackpick.com/reviews/mailchimp/) | $13/mo | per month, 500 contacts, billed monthly | Yes | 2026-06-12 |
 | [ActiveCampaign](https://trystackpick.com/reviews/activecampaign/) | $15/mo | per month, 1,000 contacts, billed annually | No | 2026-06-12 |
 | [GetResponse](https://trystackpick.com/reviews/getresponse/) | $19/mo | per month, 1,000 contacts, billed annually | Yes | 2026-06-12 |
+| [Smartlead](https://trystackpick.com/reviews/smartlead/) | $39/mo | per month | No | 2026-08-09 |
 
 **Project management**
 
@@ -89,8 +90,9 @@ more depending on which one you picked.
 | [AiSensy](https://trystackpick.com/reviews/aisensy/) | $30/mo | per month (Basic ₹2,500 + GST, INR converted to approximate USD) | No | 2026-07-10 |
 | [Wati](https://trystackpick.com/reviews/wati/) | $49/mo | per month, 5 users (Growth, billed annually) | No | 2026-07-01 |
 | [respond.io](https://trystackpick.com/reviews/respond-io/) | $79/mo | per month, 5 users (Starter, billed annually) | No | 2026-07-01 |
+| [Gallabox](https://trystackpick.com/reviews/gallabox/) | $112/mo | per month (Basic, billed annually; Meta message fees billed separately) | No | 2026-08-05 |
 
-Last verified: 2026-07-26. Prices change without notice — each row links to a review page
+Last verified: 2026-08-09. Prices change without notice — each row links to a review page
 carrying the source URL and check date.
 
 ## Cost calculators
@@ -101,6 +103,13 @@ Model your own volume instead of trusting list price:
 - [WhatsApp cost calculator](https://trystackpick.com/calculators/whatsapp-cost/) — platform fee plus Meta per-conversation charges
 - [AI voice agent cost calculator](https://trystackpick.com/calculators/ai-voice-agent-cost/) — cost per minute vs a human answering
 - [Email marketing cost calculator](https://trystackpick.com/calculators/email-marketing-cost/) — cost by list size
+
+## Pick a stack from the data
+
+- [Find My Stack](https://trystackpick.com/find-my-stack/) — rank active partner options by job, budget and operating priority
+- [Switch & Save](https://trystackpick.com/switch-and-save/) — compare a current bill against a migration path
+- [Plan Finders](https://trystackpick.com/plan-finder/) — match published capacity to monthly volume
+- [Download the CSV](https://trystackpick.com/data/pricing-index.csv) — entry price, billing unit, free-plan flag, verification date and vendor source
 
 ### Embed them on your own site (free)
 
@@ -117,23 +126,10 @@ pricing, so there is nothing to maintain. Attribution link is the only condition
 - [BiteSpeed alternatives](https://trystackpick.com/alternatives/bitespeed/) — for a vendor that quotes only by sales call
 - [Full comparison index](https://trystackpick.com/compare/)
 
-## Paid pack
-
-**Dealership Lead Recovery Pack ($49)** — the production version: reply-aware day 1/3/7 cadence
-that stops the moment the lead answers, lead scoring (hot/warm/cold), vehicle-interest capture,
-setup guide and Meta-ready WhatsApp template copy.
-
--> [Get it on Gumroad](https://stackpick.gumroad.com/l/dealership-lead-recovery)
-
-**WhatsApp Meta Template Kit ($19)** — 8 approval-ready template texts plus the rejection
-checklist. No n8n required.
-
--> [Get the kit](https://stackpick.gumroad.com/l/whatsapp-meta-template-kit)
-
 ## License
 
 Free templates: MIT — use commercially, no attribution required (a star helps).
 
 ---
 
-Maintained by [StackPick](https://trystackpick.com) · 2 free workflows · pricing for 23 tools
+Maintained by [StackPick](https://trystackpick.com) · 2 free workflows · pricing for 25 tools
