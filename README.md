@@ -95,7 +95,7 @@ more depending on which one you picked.
 | [respond.io](https://trystackpick.com/reviews/respond-io/) | $79/mo | per month, 5 users (Starter, billed annually) | No | 2026-07-01 |
 | [Gallabox](https://trystackpick.com/reviews/gallabox/) | $112/mo | per month (Basic, billed annually; Meta message fees billed separately) | No | 2026-08-05 |
 
-Last verified: 2026-08-09. Prices change without notice — each row links to a review page
+Last verified: 2026-08-12. Prices change without notice — each row links to a review page
 carrying the source URL and check date.
 
 ## Cost calculators
@@ -106,6 +106,19 @@ Model your own volume instead of trusting list price:
 - [WhatsApp cost calculator](https://trystackpick.com/calculators/whatsapp-cost/) — platform fee plus Meta per-conversation charges
 - [AI voice agent cost calculator](https://trystackpick.com/calculators/ai-voice-agent-cost/) — cost per minute vs a human answering
 - [Email marketing cost calculator](https://trystackpick.com/calculators/email-marketing-cost/) — cost by list size
+
+## AI training jobs worldwide
+
+StackPick also compares contributor platforms for people who want to help train AI. The
+pages keep advertised rates separate from guaranteed work, show the verified Hub.xyz and
+Crowtado referral destinations, and let readers model approved hours in local currency.
+
+- [Worldwide AI training jobs comparison](https://trystackpick.com/ai-training-jobs/) — Hub.xyz, Crowtado and Claru side by side
+- [Brazil · Portuguese](https://trystackpick.com/pt/trabalhos-treinamento-ia/) · [India · Hindi](https://trystackpick.com/hi/ai-training-jobs-india/) · [Nigeria](https://trystackpick.com/ng/ai-training-jobs-nigeria/)
+- [All 11 country calculators](https://trystackpick.com/ai-training-jobs/) — local language, currency and exchange-rate scenarios
+
+Rates, tasks, approvals and payout availability can change. The calculators are scenarios,
+not promises of work or income.
 
 ## Pick a stack from the data
 
