@@ -1,0 +1,129 @@
+{
+  "source_checked": "2026-08-12",
+  "fx_source": "https://open.er-api.com/v6/latest/USD",
+  "fx_updated_at": "2026-08-11T23:57:32Z",
+  "disclaimer": "Reference exchange rates are illustrative. They are not purchasing-power comparisons and do not include taxes, payout fees or bank spreads.",
+  "markets": [
+    {
+      "country_code": "IN",
+      "country": "India",
+      "country_local": "भारत",
+      "route": "hi/ai-training-jobs-india",
+      "hreflang": "hi-IN",
+      "locale": "hi-IN",
+      "currency": "INR",
+      "currency_symbol": "₹",
+      "usd_rate": 95.464214
+    },
+    {
+      "country_code": "ID",
+      "country": "Indonesia",
+      "country_local": "Indonesia",
+      "route": "id/pekerjaan-pelatihan-ai",
+      "hreflang": "id-ID",
+      "locale": "id-ID",
+      "currency": "IDR",
+      "currency_symbol": "Rp",
+      "usd_rate": 17849.327673
+    },
+    {
+      "country_code": "PH",
+      "country": "Philippines",
+      "country_local": "Pilipinas",
+      "route": "fil/mga-trabaho-ai-training",
+      "hreflang": "fil-PH",
+      "locale": "fil-PH",
+      "currency": "PHP",
+      "currency_symbol": "₱",
+      "usd_rate": 61.247049
+    },
+    {
+      "country_code": "BD",
+      "country": "Bangladesh",
+      "country_local": "বাংলাদেশ",
+      "route": "bn/ai-training-jobs-bangladesh",
+      "hreflang": "bn-BD",
+      "locale": "bn-BD",
+      "currency": "BDT",
+      "currency_symbol": "৳",
+      "usd_rate": 123.526916
+    },
+    {
+      "country_code": "PK",
+      "country": "Pakistan",
+      "country_local": "پاکستان",
+      "route": "ur/ai-training-jobs-pakistan",
+      "hreflang": "ur-PK",
+      "locale": "ur-PK",
+      "currency": "PKR",
+      "currency_symbol": "Rs",
+      "usd_rate": 277.746981
+    },
+    {
+      "country_code": "NG",
+      "country": "Nigeria",
+      "country_local": "Nigeria",
+      "route": "ng/ai-training-jobs-nigeria",
+      "hreflang": "en-NG",
+      "locale": "en-NG",
+      "currency": "NGN",
+      "currency_symbol": "₦",
+      "usd_rate": 1359.844414
+    },
+    {
+      "country_code": "CO",
+      "country": "Colombia",
+      "country_local": "Colombia",
+      "route": "co/trabajos-entrenamiento-ia-colombia",
+      "hreflang": "es-CO",
+      "locale": "es-CO",
+      "currency": "COP",
+      "currency_symbol": "$",
+      "usd_rate": 3136.623721
+    },
+    {
+      "country_code": "VN",
+      "country": "Vietnam",
+      "country_local": "Việt Nam",
+      "route": "vi/cong-viec-dao-tao-ai",
+      "hreflang": "vi-VN",
+      "locale": "vi-VN",
+      "currency": "VND",
+      "currency_symbol": "₫",
+      "usd_rate": 26033.054724
+    },
+    {
+      "country_code": "KE",
+      "country": "Kenya",
+      "country_local": "Kenya",
+      "route": "ke/kazi-mafunzo-ai",
+      "hreflang": "sw-KE",
+      "locale": "sw-KE",
+      "currency": "KES",
+      "currency_symbol": "KSh",
+      "usd_rate": 129.336948
+    },
+    {
+      "country_code": "MA",
+      "country": "Morocco",
+      "country_local": "Maroc",
+      "route": "fr/travail-entrainement-ia",
+      "hreflang": "fr-MA",
+      "locale": "fr-MA",
+      "currency": "MAD",
+      "currency_symbol": "DH",
+      "usd_rate": 9.298244
+    },
+    {
+      "country_code": "PE",
+      "country": "Peru",
+      "country_local": "Perú",
+      "route": "pe/trabajos-entrenamiento-ia-peru",
+      "hreflang": "es-PE",
+      "locale": "es-PE",
+      "currency": "PEN",
+      "currency_symbol": "S/",
+      "usd_rate": 3.374811
+    }
+  ]
+}
