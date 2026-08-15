@@ -95,7 +95,7 @@ more depending on which one you picked.
 | [respond.io](https://trystackpick.com/reviews/respond-io/) | $79/mo | per month, 5 users (Starter, billed annually) | No | 2026-07-01 |
 | [Gallabox](https://trystackpick.com/reviews/gallabox/) | $112/mo | per month (Basic, billed annually; Meta message fees billed separately) | No | 2026-08-05 |
 
-Last verified: 2026-08-12. Prices change without notice — each row links to a review page
+Last verified: 2026-08-15. Prices change without notice — each row links to a review page
 carrying the source URL and check date.
 
 ## Cost calculators
@@ -113,9 +113,11 @@ StackPick also compares contributor platforms for people who want to help train 
 pages keep advertised rates separate from guaranteed work, show the verified Hub.xyz and
 Crowtado referral destinations, and let readers model approved hours in local currency.
 
-- [Worldwide AI training jobs comparison](https://trystackpick.com/ai-training-jobs/) — Hub.xyz, Crowtado and Claru side by side
-- [Brazil · Portuguese](https://trystackpick.com/pt/trabalhos-treinamento-ia/) · [India · Hindi](https://trystackpick.com/hi/ai-training-jobs-india/) · [Nigeria](https://trystackpick.com/ng/ai-training-jobs-nigeria/)
-- [All 11 country calculators](https://trystackpick.com/ai-training-jobs/) — local language, currency and exchange-rate scenarios
+- [Worldwide AI training jobs comparison](https://trystackpick.com/ai-training-jobs/?utm_source=github&utm_medium=referral&utm_campaign=ai_training_research) — Hub.xyz, Crowtado and Claru side by side
+- [Hub.xyz evidence review](https://trystackpick.com/ai-training-jobs/hub-xyz-review/?utm_source=github&utm_medium=referral&utm_campaign=ai_training_research) · [Crowtado evidence review](https://trystackpick.com/ai-training-jobs/crowtado-review/?utm_source=github&utm_medium=referral&utm_campaign=ai_training_research)
+- [No-hype contributor guide](https://trystackpick.com/ai-training-jobs/how-to-make-money-training-ai/?utm_source=github&utm_medium=referral&utm_campaign=ai_training_research)
+- [Brazil · Portuguese](https://trystackpick.com/pt/trabalhos-treinamento-ia/?utm_source=github&utm_medium=referral&utm_campaign=ai_training_research) · [India · Hindi](https://trystackpick.com/hi/ai-training-jobs-india/?utm_source=github&utm_medium=referral&utm_campaign=ai_training_research) · [Nigeria](https://trystackpick.com/ng/ai-training-jobs-nigeria/?utm_source=github&utm_medium=referral&utm_campaign=ai_training_research)
+- Public data: [`ai-training-platforms.json`](data/ai-training-platforms.json) · [`ai-training-markets.json`](data/ai-training-markets.json)
 
 Rates, tasks, approvals and payout availability can change. The calculators are scenarios,
 not promises of work or income.
