@@ -1,0 +1,110 @@
+{
+  "source_checked": "2026-08-15",
+  "disclaimer": "Advertised rates are not guaranteed income. Task availability, approval, fees, taxes and payout eligibility vary.",
+  "hub_referral_rates_usd_per_approved_hour": {
+    "base_per_hour_usd": 5.0,
+    "referred_per_hour_usd": 5.0,
+    "l1_per_hour_usd": 0.5,
+    "l2_per_hour_usd": 0.25,
+    "source_url": "https://api.platform.hub.xyz/api/v1/referral/signup-rates"
+  },
+  "platforms": [
+    {
+      "slug": "hub",
+      "name": "Hub.xyz",
+      "official_url": "https://platform.hub.xyz",
+      "worker_rate_scenario_usd": 5.0,
+      "earning_label": {
+        "en": "Hub currently publishes US$5 per hour in its API",
+        "pt-BR": "A Hub publica US$ 5 por hora na API",
+        "es": "Hub publica actualmente US$5 por hora en su API"
+      },
+      "facts": {
+        "en": [
+          "Hub publishes US$0.50 for every approved hour from a direct referral",
+          "The published second-level rate is US$0.25 per approved hour",
+          "Available tasks depend on the project, country and approval"
+        ],
+        "pt-BR": [
+          "A Hub publica US$ 0,50 por hora aprovada de cada indicado direto",
+          "No segundo nível, a taxa publicada é de US$ 0,25 por hora aprovada",
+          "As tarefas disponíveis dependem do projeto, do país e da aprovação"
+        ],
+        "es": [
+          "Hub publica US$0,50 por cada hora aprobada de un referido directo",
+          "En el segundo nivel, la tarifa publicada es de US$0,25 por hora aprobada",
+          "Las tareas dependen del proyecto, del país y de la aprobación"
+        ]
+      },
+      "sources": [
+        "https://hub.xyz",
+        "https://api.platform.hub.xyz/api/v1/referral/signup-rates",
+        "https://ai.hub.xyz/legal"
+      ]
+    },
+    {
+      "slug": "crowtado",
+      "name": "Crowtado",
+      "official_url": "https://www.crowtado.com/sign-up",
+      "worker_rate_scenario_usd": 20.0,
+      "earning_label": {
+        "en": "Voice projects are advertised at US$18–40 per hour",
+        "pt-BR": "Projetos de voz são anunciados entre US$ 18 e US$ 40 por hora",
+        "es": "Los proyectos de voz se anuncian entre US$18 y US$40 por hora"
+      },
+      "facts": {
+        "en": [
+          "US$40/hour is an advertised amount, not a guaranteed rate",
+          "The public referral offer pays US$10 after a friend completes US$50 in tasks",
+          "The site lists payout requests starting at US$10"
+        ],
+        "pt-BR": [
+          "Os US$ 40/h são um valor anunciado, não uma taxa garantida",
+          "A indicação pública paga US$ 10 quando o amigo completa US$ 50 em tarefas",
+          "O site informa saque a partir de US$ 10"
+        ],
+        "es": [
+          "Los US$40/h son un importe anunciado, no una tarifa garantizada",
+          "La oferta pública paga US$10 cuando un amigo completa US$50 en tareas",
+          "El sitio indica que se puede solicitar el pago desde US$10"
+        ]
+      },
+      "sources": [
+        "https://www.crowtado.com/en/for-contributors",
+        "https://www.crowtado.com/en/terms",
+        "https://www.crowtado.com/en/privacy"
+      ]
+    },
+    {
+      "slug": "claru",
+      "name": "Claru",
+      "official_url": "https://app.claru.ai/signup",
+      "worker_rate_scenario_usd": 0,
+      "earning_label": {
+        "en": "The site does not show a public contributor rate",
+        "pt-BR": "O site não mostra uma taxa pública para o colaborador",
+        "es": "El sitio no muestra una tarifa pública para el colaborador"
+      },
+      "facts": {
+        "en": [
+          "The company says its network reaches six continents",
+          "We could not find a guaranteed public rate for contributors",
+          "Check the project and payment inside your account before you start"
+        ],
+        "pt-BR": [
+          "A empresa afirma atuar em seis continentes",
+          "Não encontramos um valor público garantido para quem faz as tarefas",
+          "Confira o projeto e o pagamento dentro da conta antes de começar"
+        ],
+        "es": [
+          "La empresa afirma trabajar en seis continentes",
+          "No encontramos una tarifa pública garantizada para colaboradores",
+          "Revisa el proyecto y el pago dentro de tu cuenta antes de empezar"
+        ]
+      },
+      "sources": [
+        "https://claru.ai"
+      ]
+    }
+  ]
+}
