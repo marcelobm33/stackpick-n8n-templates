@@ -14,14 +14,25 @@ no affiliate-weighted rankings. Machine-readable copies: [JSON](data/pricing-ind
 
 | Template | What it does |
 |---|---|
-| [`whatsapp-lead-follow-up.json`](free/whatsapp-lead-follow-up.json) | New lead -> instant WhatsApp reply in under 60s -> sheet log -> polite 24h follow-up |
-| [`missed-call-whatsapp-recovery.json`](free/missed-call-whatsapp-recovery.json) | Missed phone call -> WhatsApp message to the caller within seconds -> missed-call volume log |
+| [`whatsapp-lead-follow-up.json`](free/whatsapp-lead-follow-up.json) | Lead webhook -> Wati template request -> sheet log -> verified reply check before a 24-hour follow-up |
+| [`missed-call-whatsapp-recovery.json`](free/missed-call-whatsapp-recovery.json) | Mapped missed-call event -> Wati template request -> volume log; verify messaging permission first |
 
 **Setup:** import the JSON into n8n (self-hosted or [Cloud](https://trystackpick.com/reviews/n8n/)) and follow the
-sticky notes inside each workflow. Roughly 10 minutes each. You need a WhatsApp Business API
-account — [Wati vs respond.io compared on real pricing](https://trystackpick.com/vs/wati-vs-respond-io/).
+sticky notes inside each workflow. Configure credentials and approved templates, validate reply
+history and maintain opt-out suppression. Other providers need request/response adapters.
+Delivery time is not guaranteed. You need a WhatsApp Business API account — [Wati vs respond.io compared on real pricing](https://trystackpick.com/vs/wati-vs-respond-io/).
 
 Reference architecture: [car dealership AI stack](https://trystackpick.com/stacks/car-dealership-ai/).
+
+## Editable WhatsApp message copy — $19
+
+Prefer starting with the text? Our **WhatsApp Meta Template Kit** includes eight English
+message drafts, a submission checklist and a setup guide, delivered as three Markdown files
+in a ZIP. One-time purchase; WhatsApp Business API access and provider/message fees are separate.
+Meta approval, delivery and sales are not guaranteed.
+
+[Read a real sample and see every file](https://trystackpick.com/templates/?utm_source=github&utm_medium=referral&utm_campaign=whatsapp_kit#whatsapp-meta-template-kit).
+The same page has the $49 n8n dealership reference workflow for technical users.
 
 ## Verified SaaS pricing index
 
@@ -34,68 +45,68 @@ more depending on which one you picked.
 
 | Tool | From | Billing unit | Free plan | Verified |
 |---|---|---|---|---|
-| [Jasper](https://trystackpick.com/reviews/jasper/) | $39/mo | per month per seat, billed annually | No | 2026-06-12 |
+| [Jasper](https://trystackpick.com/reviews/jasper/) | $59/mo | per month per seat, billed annually | No | 2026-08-25 |
 
 **All-in-one**
 
 | Tool | From | Billing unit | Free plan | Verified |
 |---|---|---|---|---|
-| [Systeme.io](https://trystackpick.com/reviews/systeme-io/) | $27/mo | per month, billed annually | Yes | 2026-06-12 |
+| [Systeme.io](https://trystackpick.com/reviews/systeme-io/) | $17/mo | per month, monthly billing | Yes | 2026-08-25 |
 
 **Workflow automation**
 
 | Tool | From | Billing unit | Free plan | Verified |
 |---|---|---|---|---|
-| [Make](https://trystackpick.com/reviews/make/) | $9/mo | per month, 10,000 credits, billed annually | Yes | 2026-07-10 |
-| [Zapier](https://trystackpick.com/reviews/zapier/) | $20/mo | per month, 750 tasks, billed annually | Yes | 2026-06-12 |
-| [n8n](https://trystackpick.com/reviews/n8n/) | $26/mo | per month, 2,500 executions (Cloud Starter, billed annually) | Yes | 2026-07-01 |
-| [Lindy](https://trystackpick.com/reviews/lindy/) | $50/mo | per month, 5,000 credits (Pro) | Yes | 2026-07-01 |
-| [Gumloop](https://trystackpick.com/reviews/gumloop/) | $97/mo | per month, 30,000 credits (Starter) | Yes | 2026-07-01 |
+| [Make](https://trystackpick.com/reviews/make/) | $9/mo | per month, 10,000 credits, billed annually | Yes | 2026-08-25 |
+| [Zapier](https://trystackpick.com/reviews/zapier/) | $20/mo | per month, 2,000 tasks, billed annually | Yes | 2026-08-25 |
+| [n8n](https://trystackpick.com/reviews/n8n/) | $23/mo | per month, 2,500 executions (Cloud Starter €20, billed annually; approximate USD) | Yes | 2026-08-25 |
+| [Lindy](https://trystackpick.com/reviews/lindy/) | $29.99/mo | per month per user, 3,000 credits (Plus) | No | 2026-08-25 |
+| [Gumloop](https://trystackpick.com/reviews/gumloop/) | $37/mo | per month, 20,000 included credits (Pro) | No | 2026-08-25 |
 
 **CRM & sales**
 
 | Tool | From | Billing unit | Free plan | Verified |
 |---|---|---|---|---|
-| [Pipedrive](https://trystackpick.com/reviews/pipedrive/) | $14/mo | per month per seat, billed annually | No | 2026-06-12 |
-| [HubSpot](https://trystackpick.com/reviews/hubspot/) | $15/mo | per month per seat, Starter, billed annually | Yes | 2026-06-12 |
-| [Happierleads](https://trystackpick.com/reviews/happierleads/) | $99/mo | per month for 300 identified visitors | No | 2026-07-10 |
+| [HubSpot](https://trystackpick.com/reviews/hubspot/) | $7/mo | per month per seat, Starter, annual payment; current new-customer offer | Yes | 2026-08-25 |
+| [Pipedrive](https://trystackpick.com/reviews/pipedrive/) | $14/mo | per month per seat, billed annually | No | 2026-08-25 |
+| [Happierleads](https://trystackpick.com/reviews/happierleads/) | $99/mo | per month for 300 identified visitors | No | 2026-08-25 |
 
 **Email marketing**
 
 | Tool | From | Billing unit | Free plan | Verified |
 |---|---|---|---|---|
-| [Brevo](https://trystackpick.com/reviews/brevo/) | $9/mo | per month, 5,000 emails (unlimited contacts) | Yes | 2026-06-12 |
-| [Moosend](https://trystackpick.com/reviews/moosend/) | $9/mo | per month, 500 subscribers, billed annually | No | 2026-06-12 |
-| [Mailchimp](https://trystackpick.com/reviews/mailchimp/) | $13/mo | per month, 500 contacts, billed monthly | Yes | 2026-06-12 |
-| [ActiveCampaign](https://trystackpick.com/reviews/activecampaign/) | $15/mo | per month, 1,000 contacts, billed annually | No | 2026-06-12 |
-| [GetResponse](https://trystackpick.com/reviews/getresponse/) | $19/mo | per month, 1,000 contacts, billed annually | Yes | 2026-06-12 |
-| [Smartlead](https://trystackpick.com/reviews/smartlead/) | $39/mo | per month | No | 2026-08-09 |
+| [Moosend](https://trystackpick.com/reviews/moosend/) | $7/mo | per month, 500 subscribers, billed annually | No | 2026-08-25 |
+| [Brevo](https://trystackpick.com/reviews/brevo/) | $9/mo | per month, 5,000 emails; $9 monthly or $8.08 with annual billing | Yes | 2026-08-25 |
+| [Mailchimp](https://trystackpick.com/reviews/mailchimp/) | $11/mo | per month, 500 contacts; regular Essentials price rounded from $10.56 | Yes | 2026-08-25 |
+| [ActiveCampaign](https://trystackpick.com/reviews/activecampaign/) | $15/mo | per month, 1,000 contacts, billed annually | No | 2026-08-25 |
+| [GetResponse](https://trystackpick.com/reviews/getresponse/) | $19/mo | per month, 1,000 contacts; annual prepay saves 18% | No | 2026-08-25 |
+| [Smartlead](https://trystackpick.com/reviews/smartlead/) | $39/mo | per month | No | 2026-08-25 |
 
 **Project management**
 
 | Tool | From | Billing unit | Free plan | Verified |
 |---|---|---|---|---|
-| [ClickUp](https://trystackpick.com/reviews/clickup/) | $7/mo | per month per seat, billed annually | Yes | 2026-06-12 |
-| [monday.com](https://trystackpick.com/reviews/monday/) | $9/mo | per month per seat, billed annually (3-seat minimum) | Yes | 2026-06-12 |
+| [ClickUp](https://trystackpick.com/reviews/clickup/) | $7/mo | per month per seat, billed annually | Yes | 2026-08-25 |
+| [monday.com](https://trystackpick.com/reviews/monday/) | $9/mo | per month per seat, billed annually (3-seat minimum) | Yes | 2026-08-25 |
 
 **AI voice agents**
 
 | Tool | From | Billing unit | Free plan | Verified |
 |---|---|---|---|---|
-| [Retell AI](https://trystackpick.com/reviews/retell/) | Free / custom | pay as you go, ~$0.07-0.13 per minute all-in | Yes | 2026-07-01 |
-| [Vapi](https://trystackpick.com/reviews/vapi/) | Free / custom | pay as you go, $0.05/min platform fee + provider costs | Yes | 2026-07-01 |
-| [Synthflow AI](https://trystackpick.com/reviews/synthflow/) | $29/mo | per month, 50 minutes included on entry plan | No | 2026-07-01 |
+| [Retell AI](https://trystackpick.com/reviews/retell/) | Free / custom | pay as you go, $0.07-$0.31 per minute for AI Voice Agents | Yes | 2026-08-25 |
+| [Vapi](https://trystackpick.com/reviews/vapi/) | Free / custom | pay as you go, $0.05/min platform fee + provider costs | Yes | 2026-08-25 |
+| [Synthflow AI](https://trystackpick.com/reviews/synthflow/) | $2500/mo | per month equivalent of the $30,000 annual Enterprise contract minimum | No | 2026-08-25 |
 
 **WhatsApp / BSP**
 
 | Tool | From | Billing unit | Free plan | Verified |
 |---|---|---|---|---|
-| [AiSensy](https://trystackpick.com/reviews/aisensy/) | $30/mo | per month (Basic ₹2,500 + GST, INR converted to approximate USD) | No | 2026-07-10 |
-| [Wati](https://trystackpick.com/reviews/wati/) | $49/mo | per month, 5 users (Growth, billed annually) | No | 2026-07-01 |
-| [respond.io](https://trystackpick.com/reviews/respond-io/) | $79/mo | per month, 5 users (Starter, billed annually) | No | 2026-07-01 |
-| [Gallabox](https://trystackpick.com/reviews/gallabox/) | $112/mo | per month (Basic, billed annually; Meta message fees billed separately) | No | 2026-08-05 |
+| [AiSensy](https://trystackpick.com/reviews/aisensy/) | $16/mo | per month (Basic ₹1,500; INR converted to approximate USD at the 2026-08-24 ECB reference rate) | Yes | 2026-08-25 |
+| [Wati](https://trystackpick.com/reviews/wati/) | $58/mo | per month, 3 users and 500 active contacts (Growth R$299, billed annually; approximate USD) | No | 2026-08-25 |
+| [respond.io](https://trystackpick.com/reviews/respond-io/) | $79/mo | per month, 5 users (Starter, billed annually) | No | 2026-08-25 |
+| [Gallabox](https://trystackpick.com/reviews/gallabox/) | $112/mo | per month (Basic, billed annually; Meta message fees billed separately) | No | 2026-08-25 |
 
-Last verified: 2026-08-15. Prices change without notice — each row links to a review page
+Snapshot generated: 2026-09-04. Individual verification dates are shown in each row. Prices change without notice — each row links to a review page
 carrying the source URL and check date.
 
 ## Cost calculators
