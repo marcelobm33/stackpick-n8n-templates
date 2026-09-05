@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-15",
+  "generated": "2026-09-04",
   "currency": "USD",
   "tools": [
     {
@@ -29,31 +29,37 @@
           "notes": "Predictive sending, attribution, salesforce-grade automation"
         }
       ],
-      "verified_at": "2026-06-12",
+      "verified_at": "2026-08-25",
       "price_source_url": "https://www.activecampaign.com/pricing"
     },
     {
       "slug": "aisensy",
       "name": "AiSensy",
       "category": "whatsapp",
-      "starting_price_usd": 30,
-      "pricing_unit": "per month (Basic \u20b92,500 + GST, INR converted to approximate USD)",
-      "free_plan": false,
+      "starting_price_usd": 16,
+      "pricing_unit": "per month (Basic \u20b91,500; INR converted to approximate USD at the 2026-08-24 ECB reference rate)",
+      "free_plan": true,
       "tiers": [
         {
-          "name": "Basic",
-          "price_usd": 30,
+          "name": "Free Forever",
+          "price_usd": 0,
           "contacts": 0,
-          "notes": "\u20b92,500/mo + GST; keyword chatbots and flow builder"
+          "notes": "Official WhatsApp API, unlimited contacts and inbox testing; broadcasting requires a paid plan"
         },
         {
-          "name": "Pro + AI",
-          "price_usd": 42,
+          "name": "Basic",
+          "price_usd": 16,
           "contacts": 0,
-          "notes": "\u20b93,500/mo + GST; 7,000 AI messages and knowledge base"
+          "notes": "\u20b91,500/mo; broadcasting, retargeting and shared inbox; Meta message fees separate"
+        },
+        {
+          "name": "Pro",
+          "price_usd": 33,
+          "contacts": 0,
+          "notes": "\u20b93,200/mo; adds scheduling, click tracking and budget analytics; AI Chat Agent is a separate \u20b93,500/mo add-on"
         }
       ],
-      "verified_at": "2026-07-10",
+      "verified_at": "2026-08-25",
       "price_source_url": "https://aisensy.com/pricing"
     },
     {
@@ -61,7 +67,7 @@
       "name": "Brevo",
       "category": "email-marketing",
       "starting_price_usd": 9,
-      "pricing_unit": "per month, 5,000 emails (unlimited contacts)",
+      "pricing_unit": "per month, 5,000 emails; $9 monthly or $8.08 with annual billing",
       "free_plan": true,
       "tiers": [
         {
@@ -77,13 +83,13 @@
           "notes": "5,000 emails/month, no daily limit"
         },
         {
-          "name": "Business",
+          "name": "Standard",
           "price_usd": 18,
           "contacts": 0,
           "notes": "Adds automation, A/B testing, send-time AI"
         }
       ],
-      "verified_at": "2026-06-12",
+      "verified_at": "2026-08-25",
       "price_source_url": "https://www.brevo.com/pricing/"
     },
     {
@@ -98,7 +104,7 @@
           "name": "Free Forever",
           "price_usd": 0,
           "contacts": 0,
-          "notes": "Unlimited tasks and members, 100MB storage"
+          "notes": "Unlimited tasks and members, 60MB storage"
         },
         {
           "name": "Unlimited",
@@ -113,7 +119,7 @@
           "notes": "Automations at scale, time tracking, sprints"
         }
       ],
-      "verified_at": "2026-06-12",
+      "verified_at": "2026-08-25",
       "price_source_url": "https://clickup.com/pricing"
     },
     {
@@ -128,22 +134,22 @@
           "name": "Basic",
           "price_usd": 112,
           "contacts": 0,
-          "notes": "\u20b92,399/mo annual; 3 users hard cap; 500 AI credits; WhatsApp+Instagram+web widget"
+          "notes": "$112/mo billed annually; 3 users hard cap; 500 AI credits; WhatsApp+Instagram+web widget"
         },
         {
           "name": "Essential",
           "price_usd": 248,
           "contacts": 0,
-          "notes": "\u20b95,599/mo annual; 6 users; drip campaigns, inbox AI copilot, CRM integrations"
+          "notes": "$248/mo billed annually; 6 users; drip campaigns, inbox AI copilot, CRM integrations"
         },
         {
           "name": "Advanced",
           "price_usd": 474,
           "contacts": 0,
-          "notes": "\u20b913,599/mo annual; 10 users; full-funnel AI agents"
+          "notes": "$474/mo billed annually; 10 users; full-funnel AI agents"
         }
       ],
-      "verified_at": "2026-08-05",
+      "verified_at": "2026-08-25",
       "price_source_url": "https://gallabox.com/pricing"
     },
     {
@@ -151,8 +157,8 @@
       "name": "GetResponse",
       "category": "email-marketing",
       "starting_price_usd": 19,
-      "pricing_unit": "per month, 1,000 contacts, billed annually",
-      "free_plan": true,
+      "pricing_unit": "per month, 1,000 contacts; annual prepay saves 18%",
+      "free_plan": false,
       "tiers": [
         {
           "name": "Starter",
@@ -173,37 +179,31 @@
           "notes": "Adds webinars and online course builder"
         }
       ],
-      "verified_at": "2026-06-12",
+      "verified_at": "2026-08-25",
       "price_source_url": "https://www.getresponse.com/pricing"
     },
     {
       "slug": "gumloop",
       "name": "Gumloop",
       "category": "automation",
-      "starting_price_usd": 97,
-      "pricing_unit": "per month, 30,000 credits (Starter)",
-      "free_plan": true,
+      "starting_price_usd": 37,
+      "pricing_unit": "per month, 20,000 included credits (Pro)",
+      "free_plan": false,
       "tiers": [
         {
-          "name": "Free",
-          "price_usd": 0,
-          "contacts": 1000,
-          "notes": "1,000 credits/month, core nodes"
-        },
-        {
-          "name": "Starter",
-          "price_usd": 97,
-          "contacts": 30000,
-          "notes": "30,000 credits, all AI nodes, browser automation"
-        },
-        {
           "name": "Pro",
-          "price_usd": 297,
-          "contacts": 75000,
-          "notes": "75,000 credits, team workspace, priority support"
+          "price_usd": 37,
+          "contacts": 20000,
+          "notes": "20,000 credits/month, unlimited seats and agents, 8% orchestration fee"
+        },
+        {
+          "name": "Enterprise",
+          "price_usd": 0,
+          "contacts": 0,
+          "notes": "Custom pricing and credits, enterprise controls and support"
         }
       ],
-      "verified_at": "2026-07-01",
+      "verified_at": "2026-08-25",
       "price_source_url": "https://www.gumloop.com/pricing"
     },
     {
@@ -233,15 +233,15 @@
           "notes": "3,000 identified visitors/month"
         }
       ],
-      "verified_at": "2026-07-10",
+      "verified_at": "2026-08-25",
       "price_source_url": "https://happierleads.com/pricing"
     },
     {
       "slug": "hubspot",
       "name": "HubSpot",
       "category": "crm",
-      "starting_price_usd": 15,
-      "pricing_unit": "per month per seat, Starter, billed annually",
+      "starting_price_usd": 7,
+      "pricing_unit": "per month per seat, Starter, annual payment; current new-customer offer",
       "free_plan": true,
       "tiers": [
         {
@@ -252,108 +252,102 @@
         },
         {
           "name": "Marketing Hub Starter",
-          "price_usd": 15,
+          "price_usd": 7,
           "contacts": 1000,
-          "notes": "Per seat. Email marketing, forms, landing pages"
+          "notes": "Per seat, paid annually; current new-customer offer. Regular monthly price shown as $20"
         },
         {
           "name": "Marketing Hub Professional",
           "price_usd": 800,
           "contacts": 2000,
-          "notes": "Per month. Full automation, ABM, custom reporting"
+          "notes": "Annual-commit monthly equivalent; 3 Core Seats, automation and custom reporting"
         }
       ],
-      "verified_at": "2026-06-12",
+      "verified_at": "2026-08-25",
       "price_source_url": "https://www.hubspot.com/pricing/marketing"
     },
     {
       "slug": "jasper",
       "name": "Jasper",
       "category": "ai-writing",
-      "starting_price_usd": 39,
+      "starting_price_usd": 59,
       "pricing_unit": "per month per seat, billed annually",
       "free_plan": false,
       "tiers": [
         {
-          "name": "Creator",
-          "price_usd": 39,
-          "contacts": 0,
-          "notes": "1 brand voice, 50+ templates, browser extension"
-        },
-        {
           "name": "Pro",
           "price_usd": 59,
           "contacts": 0,
-          "notes": "3 brand voices, campaigns, AI image suite"
+          "notes": "Billed annually; $69 month-to-month, one seat, 2 Brand Voices"
         },
         {
           "name": "Business",
           "price_usd": 0,
           "contacts": 0,
-          "notes": "Custom pricing. API, style guide enforcement, SSO"
+          "notes": "Custom pricing. Custom agents, API, governance, SSO and priority support"
         }
       ],
-      "verified_at": "2026-06-12",
+      "verified_at": "2026-08-25",
       "price_source_url": "https://www.jasper.ai/pricing"
     },
     {
       "slug": "lindy",
       "name": "Lindy",
       "category": "automation",
-      "starting_price_usd": 50,
-      "pricing_unit": "per month, 5,000 credits (Pro)",
-      "free_plan": true,
+      "starting_price_usd": 29.99,
+      "pricing_unit": "per month per user, 3,000 credits (Plus)",
+      "free_plan": false,
       "tiers": [
         {
-          "name": "Free",
-          "price_usd": 0,
-          "contacts": 400,
-          "notes": "400 credits/month to test agents"
+          "name": "Plus",
+          "price_usd": 29.99,
+          "contacts": 3000,
+          "notes": "3,000 credits per user/month"
         },
         {
           "name": "Pro",
-          "price_usd": 50,
-          "contacts": 5000,
-          "notes": "5,000 credits, premium actions, phone calls"
+          "price_usd": 99.99,
+          "contacts": 15000,
+          "notes": "15,000 credits per user/month"
         },
         {
-          "name": "Business",
-          "price_usd": 300,
-          "contacts": 30000,
-          "notes": "30,000 credits, teams and priority support"
+          "name": "Max",
+          "price_usd": 199.99,
+          "contacts": 35000,
+          "notes": "35,000 credits per user/month"
         }
       ],
-      "verified_at": "2026-07-01",
+      "verified_at": "2026-08-25",
       "price_source_url": "https://www.lindy.ai/pricing"
     },
     {
       "slug": "mailchimp",
       "name": "Mailchimp",
       "category": "email-marketing",
-      "starting_price_usd": 13,
-      "pricing_unit": "per month, 500 contacts, billed monthly",
+      "starting_price_usd": 11,
+      "pricing_unit": "per month, 500 contacts; regular Essentials price rounded from $10.56",
       "free_plan": true,
       "tiers": [
         {
           "name": "Free",
           "price_usd": 0,
-          "contacts": 500,
-          "notes": "1,000 sends/month, Mailchimp branding"
+          "contacts": 250,
+          "notes": "Up to 500 sends/month or 250/day, Mailchimp branding"
         },
         {
           "name": "Essentials",
-          "price_usd": 13,
+          "price_usd": 11,
           "contacts": 500,
-          "notes": "A/B testing, scheduling, no branding"
+          "notes": "$10.56 regular; $5.28 introductory price for the first 12 months on the offer shown"
         },
         {
           "name": "Standard",
-          "price_usd": 20,
+          "price_usd": 16,
           "contacts": 500,
-          "notes": "Automation journeys, send-time optimization"
+          "notes": "$16.31 regular; $8.15 introductory price for the first 12 months on the offer shown"
         }
       ],
-      "verified_at": "2026-06-12",
+      "verified_at": "2026-08-25",
       "price_source_url": "https://mailchimp.com/pricing/marketing/"
     },
     {
@@ -383,7 +377,7 @@
           "notes": "Priority execution, custom variables, full-text logs"
         }
       ],
-      "verified_at": "2026-07-10",
+      "verified_at": "2026-08-25",
       "price_source_url": "https://www.make.com/en/pricing"
     },
     {
@@ -413,45 +407,45 @@
           "notes": "Timeline, automations (250/mo), integrations"
         }
       ],
-      "verified_at": "2026-06-12",
+      "verified_at": "2026-08-25",
       "price_source_url": "https://monday.com/pricing"
     },
     {
       "slug": "moosend",
       "name": "Moosend",
       "category": "email-marketing",
-      "starting_price_usd": 9,
+      "starting_price_usd": 7,
       "pricing_unit": "per month, 500 subscribers, billed annually",
       "free_plan": false,
       "tiers": [
         {
           "name": "Pro",
-          "price_usd": 9,
+          "price_usd": 7,
           "contacts": 500,
-          "notes": "Unlimited emails, automation, landing pages"
+          "notes": "Annual price; $9 monthly. Unlimited campaigns, automation and landing pages"
         },
         {
           "name": "Pro 1k",
-          "price_usd": 16,
+          "price_usd": 13,
           "contacts": 1000,
-          "notes": "Same features, larger list"
+          "notes": "Annual price; $16 monthly"
         },
         {
           "name": "Pro 5k",
-          "price_usd": 48,
+          "price_usd": 38,
           "contacts": 5000,
-          "notes": "Same features, larger list"
+          "notes": "Annual price; $48 monthly"
         }
       ],
-      "verified_at": "2026-06-12",
+      "verified_at": "2026-08-25",
       "price_source_url": "https://moosend.com/pricing"
     },
     {
       "slug": "n8n",
       "name": "n8n",
       "category": "automation",
-      "starting_price_usd": 26,
-      "pricing_unit": "per month, 2,500 executions (Cloud Starter, billed annually)",
+      "starting_price_usd": 23,
+      "pricing_unit": "per month, 2,500 executions (Cloud Starter \u20ac20, billed annually; approximate USD)",
       "free_plan": true,
       "tiers": [
         {
@@ -462,18 +456,18 @@
         },
         {
           "name": "Starter (Cloud)",
-          "price_usd": 26,
+          "price_usd": 23,
           "contacts": 2500,
-          "notes": "2.5k executions, 5 active workflows, EUR 24 billed annually"
+          "notes": "2.5k executions, unlimited workflows/users, EUR 20 billed annually"
         },
         {
           "name": "Pro (Cloud)",
-          "price_usd": 65,
+          "price_usd": 58,
           "contacts": 10000,
-          "notes": "10k executions, 15 active workflows, EUR 60 billed annually"
+          "notes": "10k executions, unlimited workflows/users, EUR 50 billed annually"
         }
       ],
-      "verified_at": "2026-07-01",
+      "verified_at": "2026-08-25",
       "price_source_url": "https://n8n.io/pricing/"
     },
     {
@@ -503,7 +497,7 @@
           "notes": "AI sales assistant, forecasting, e-sign"
         }
       ],
-      "verified_at": "2026-06-12",
+      "verified_at": "2026-08-25",
       "price_source_url": "https://www.pipedrive.com/pricing"
     },
     {
@@ -518,22 +512,22 @@
           "name": "Starter",
           "price_usd": 79,
           "contacts": 0,
-          "notes": "5 users, all channels, basic workflows"
+          "notes": "5 users, unlimited active contacts, inboxes and basic reports; no workflow automation"
         },
         {
           "name": "Growth",
           "price_usd": 159,
-          "contacts": 0,
-          "notes": "Adds AI agent, advanced routing, more contacts"
+          "contacts": 1000,
+          "notes": "10 users, starts with 1,000 active contacts, workflows and AI Agents"
         },
         {
           "name": "Advanced",
           "price_usd": 279,
-          "contacts": 0,
-          "notes": "Higher limits, custom roles, priority support"
+          "contacts": 1000,
+          "notes": "10 users, starts with 1,000 active contacts, webhooks, SSO and multiple workspaces"
         }
       ],
-      "verified_at": "2026-07-01",
+      "verified_at": "2026-08-25",
       "price_source_url": "https://respond.io/pricing"
     },
     {
@@ -541,7 +535,7 @@
       "name": "Retell AI",
       "category": "voice-ai",
       "starting_price_usd": 0,
-      "pricing_unit": "pay as you go, ~$0.07-0.13 per minute all-in",
+      "pricing_unit": "pay as you go, $0.07-$0.31 per minute for AI Voice Agents",
       "free_plan": true,
       "tiers": [
         {
@@ -558,12 +552,12 @@
         },
         {
           "name": "Enterprise",
-          "price_usd": 800,
-          "contacts": 10000,
-          "notes": "Volume discounts below $0.08/min, SLA, HIPAA/SOC2"
+          "price_usd": 0,
+          "contacts": 0,
+          "notes": "Custom volume pricing, dedicated infrastructure, SSO and enterprise support"
         }
       ],
-      "verified_at": "2026-07-01",
+      "verified_at": "2026-08-25",
       "price_source_url": "https://www.retellai.com/pricing"
     },
     {
@@ -599,45 +593,33 @@
           "notes": "Unlimited stored contacts and 500,000 email sends/month"
         }
       ],
-      "verified_at": "2026-08-09",
+      "verified_at": "2026-08-25",
       "price_source_url": "https://www.smartlead.ai/pricing"
     },
     {
       "slug": "synthflow",
       "name": "Synthflow AI",
       "category": "voice-ai",
-      "starting_price_usd": 29,
-      "pricing_unit": "per month, 50 minutes included on entry plan",
+      "starting_price_usd": 2500,
+      "pricing_unit": "per month equivalent of the $30,000 annual Enterprise contract minimum",
       "free_plan": false,
       "tiers": [
         {
-          "name": "Starter",
-          "price_usd": 29,
-          "contacts": 50,
-          "notes": "50 min included, then ~$0.58/min - test tier"
-        },
-        {
-          "name": "Pro",
-          "price_usd": 450,
-          "contacts": 2000,
-          "notes": "2,000 min (~$0.23/min), workflows, API, subaccounts"
-        },
-        {
-          "name": "Growth",
-          "price_usd": 900,
-          "contacts": 4000,
-          "notes": "4,000 min (~$0.23/min), white label add-on for agencies"
+          "name": "Enterprise",
+          "price_usd": 2500,
+          "contacts": 0,
+          "notes": "Contracts start at $30,000 annually; final price depends on volume, concurrency, telephony, integrations, security and launch support"
         }
       ],
-      "verified_at": "2026-07-01",
+      "verified_at": "2026-08-25",
       "price_source_url": "https://synthflow.ai/pricing"
     },
     {
       "slug": "systeme-io",
       "name": "Systeme.io",
       "category": "all-in-one",
-      "starting_price_usd": 27,
-      "pricing_unit": "per month, billed annually",
+      "starting_price_usd": 17,
+      "pricing_unit": "per month, monthly billing",
       "free_plan": true,
       "tiers": [
         {
@@ -648,7 +630,7 @@
         },
         {
           "name": "Startup",
-          "price_usd": 27,
+          "price_usd": 17,
           "contacts": 5000,
           "notes": "10 funnels, 5 courses, 1 custom domain"
         },
@@ -659,7 +641,7 @@
           "notes": "Evergreen webinars, coupon codes, A/B tests"
         }
       ],
-      "verified_at": "2026-06-12",
+      "verified_at": "2026-08-25",
       "price_source_url": "https://systeme.io/pricing"
     },
     {
@@ -671,55 +653,55 @@
       "free_plan": true,
       "tiers": [
         {
-          "name": "Free credit",
+          "name": "Included usage",
           "price_usd": 0,
-          "contacts": 80,
-          "notes": "$10 trial credit, no card required"
+          "contacts": 60,
+          "notes": "60+ call minutes included before usage billing"
         },
         {
-          "name": "Pay as you go",
-          "price_usd": 130,
+          "name": "Build / pay as you go",
+          "price_usd": 50,
           "contacts": 1000,
-          "notes": "$0.05/min platform + ~$0.08/min providers (STT/LLM/TTS at cost)"
+          "notes": "$0.05/min Vapi hosting for 1,000 minutes; STT, LLM, TTS and transport billed at cost"
         },
         {
-          "name": "Enterprise",
-          "price_usd": 1000,
-          "contacts": 10000,
-          "notes": "Committed volume, discounted rates, SOC2/HIPAA"
+          "name": "Scale",
+          "price_usd": 0,
+          "contacts": 0,
+          "notes": "Annual contract with fixed platform fee, committed volume and custom rates"
         }
       ],
-      "verified_at": "2026-07-01",
+      "verified_at": "2026-08-25",
       "price_source_url": "https://vapi.ai/pricing"
     },
     {
       "slug": "wati",
       "name": "Wati",
       "category": "whatsapp",
-      "starting_price_usd": 49,
-      "pricing_unit": "per month, 5 users (Growth, billed annually)",
+      "starting_price_usd": 58,
+      "pricing_unit": "per month, 3 users and 500 active contacts (Growth R$299, billed annually; approximate USD)",
       "free_plan": false,
       "tiers": [
         {
           "name": "Growth",
-          "price_usd": 49,
-          "contacts": 0,
-          "notes": "5 users, shared inbox, broadcasts, basic chatbot"
+          "price_usd": 58,
+          "contacts": 500,
+          "notes": "R$299/month billed annually; 3 users, 500 monthly active contacts and 2,500 automation triggers"
         },
         {
           "name": "Pro",
-          "price_usd": 99,
-          "contacts": 0,
-          "notes": "Adds flow builder, integrations, roles"
+          "price_usd": 116,
+          "contacts": 1000,
+          "notes": "R$599/month billed annually; 5 users, 1,000 monthly active contacts and 10,000 automation triggers"
         },
         {
           "name": "Business",
-          "price_usd": 299,
-          "contacts": 0,
-          "notes": "Advanced automations, higher limits, priority support"
+          "price_usd": 281,
+          "contacts": 2500,
+          "notes": "R$1,449/month billed annually; 10 users, 2,500 monthly active contacts and priority support"
         }
       ],
-      "verified_at": "2026-07-01",
+      "verified_at": "2026-08-25",
       "price_source_url": "https://www.wati.io/pricing/"
     },
     {
@@ -727,7 +709,7 @@
       "name": "Zapier",
       "category": "automation",
       "starting_price_usd": 20,
-      "pricing_unit": "per month, 750 tasks, billed annually",
+      "pricing_unit": "per month, 2,000 tasks, billed annually",
       "free_plan": true,
       "tiers": [
         {
@@ -740,16 +722,16 @@
           "name": "Professional",
           "price_usd": 20,
           "contacts": 0,
-          "notes": "750 tasks, multi-step Zaps, webhooks"
+          "notes": "$19.99 starting price at the 2,000-task selector; multi-step Zaps and webhooks"
         },
         {
           "name": "Team",
           "price_usd": 69,
           "contacts": 0,
-          "notes": "2,000 tasks, shared workspace, SSO"
+          "notes": "Starting price at the 2,000-task selector; 25 users, shared workspace and SAML SSO"
         }
       ],
-      "verified_at": "2026-06-12",
+      "verified_at": "2026-08-25",
       "price_source_url": "https://zapier.com/pricing"
     }
   ]
