@@ -3,7 +3,7 @@
   "nodes": [
     {
       "parameters": {
-        "content": "## Missed Call → WhatsApp Recovery (free)\n\nEvery phone call you miss becomes a WhatsApp conversation within seconds, and gets logged so you can see how many calls you were losing.\n\n**Setup (10 min):**\n1. Point your phone system's *missed call / no-answer* webhook at the Webhook node URL. Works with Twilio (`StatusCallback` with `no-answer`/`busy`), CallRail, JustCall, 3CX, or any system that can POST on a missed call.\n2. Paste your WhatsApp API key in the HTTP Request node (Wati shown; respond.io/AiSensy: swap URL).\n3. Create and approve a WhatsApp template `missed_call_recovery` (example text: \"Sorry we missed your call! How can we help?\").\n4. Connect Google Sheets to see your missed-call volume — most businesses are shocked by this number.\n\n**Expected payload:** `{ \"caller\": \"+15551234567\", \"called_at\": \"...\", \"line\": \"sales\" }`\nTwilio users: map `From` → caller in the Set node.\n\nDealership pack with vehicle-interest capture + day 1/3/7 cadence:\nhttps://stackpick-b8s.pages.dev/templates/\n\nAI answering instead (costs ~$0.11/min, compared here):\nhttps://stackpick-b8s.pages.dev/calculators/ai-voice-agent-cost/",
+        "content": "## Missed Call → WhatsApp Recovery (free reference workflow)\n\nExample: normalize a missed-call event, request a Wati WhatsApp template send and log the event to Google Sheets.\n\nMap your phone provider's no-answer event to {\"phone\":\"+15551234567\",\"name\":\"Caller\",\"from\":\"+15551234567\"}. Confirm the event actually means a missed call, and that the recipient has given permission for the intended WhatsApp contact. A missed call alone is not consent.\n\nReplace Wati tenant/API placeholders and submit the missed_call_recovery template for Meta review. Other providers require authentication, URL and body adapters. Connect Sheets and test with a permitted test number before enabling.\n\nDelivery time and conversations are not guaranteed. Provider/message fees, event deduplication and recipient suppression must be handled in your setup.\n\nhttps://trystackpick.com/templates/",
         "height": 560,
         "width": 420
       },
@@ -11,7 +11,10 @@
       "name": "Setup notes",
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
-      "position": [-720, -160]
+      "position": [
+        -720,
+        -160
+      ]
     },
     {
       "parameters": {
@@ -23,7 +26,10 @@
       "name": "Missed call (webhook)",
       "type": "n8n-nodes-base.webhook",
       "typeVersion": 2,
-      "position": [-240, 80],
+      "position": [
+        -240,
+        80
+      ],
       "webhookId": "missed-call"
     },
     {
@@ -56,7 +62,10 @@
       "name": "Normalize call event",
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
-      "position": [-20, 80]
+      "position": [
+        -20,
+        80
+      ]
     },
     {
       "parameters": {
@@ -86,7 +95,10 @@
       "name": "Has caller number?",
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
-      "position": [200, 80]
+      "position": [
+        200,
+        80
+      ]
     },
     {
       "parameters": {
@@ -114,7 +126,10 @@
       "name": "Send WhatsApp recovery message",
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
-      "position": [440, 0]
+      "position": [
+        440,
+        0
+      ]
     },
     {
       "parameters": {
@@ -144,24 +159,57 @@
       "name": "Log missed call",
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.5,
-      "position": [660, 0]
+      "position": [
+        660,
+        0
+      ]
     }
   ],
   "connections": {
     "Missed call (webhook)": {
-      "main": [[{ "node": "Normalize call event", "type": "main", "index": 0 }]]
+      "main": [
+        [
+          {
+            "node": "Normalize call event",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     },
     "Normalize call event": {
-      "main": [[{ "node": "Has caller number?", "type": "main", "index": 0 }]]
+      "main": [
+        [
+          {
+            "node": "Has caller number?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     },
     "Has caller number?": {
       "main": [
-        [{ "node": "Send WhatsApp recovery message", "type": "main", "index": 0 }],
+        [
+          {
+            "node": "Send WhatsApp recovery message",
+            "type": "main",
+            "index": 0
+          }
+        ],
         []
       ]
     },
     "Send WhatsApp recovery message": {
-      "main": [[{ "node": "Log missed call", "type": "main", "index": 0 }]]
+      "main": [
+        [
+          {
+            "node": "Log missed call",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     }
   },
   "settings": {
