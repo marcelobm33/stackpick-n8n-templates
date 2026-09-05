@@ -1,26 +1,26 @@
 slug,name,category,starting_price_usd,pricing_unit,free_plan,verified_at,price_source_url
-activecampaign,ActiveCampaign,email-marketing,15,"per month, 1,000 contacts, billed annually",false,2026-06-12,https://www.activecampaign.com/pricing
-aisensy,AiSensy,whatsapp,30,"per month (Basic ₹2,500 + GST, INR converted to approximate USD)",false,2026-07-10,https://aisensy.com/pricing
-brevo,Brevo,email-marketing,9,"per month, 5,000 emails (unlimited contacts)",true,2026-06-12,https://www.brevo.com/pricing/
-clickup,ClickUp,productivity,7,"per month per seat, billed annually",true,2026-06-12,https://clickup.com/pricing
-gallabox,Gallabox,whatsapp,112,"per month (Basic, billed annually; Meta message fees billed separately)",false,2026-08-05,https://gallabox.com/pricing
-getresponse,GetResponse,email-marketing,19,"per month, 1,000 contacts, billed annually",true,2026-06-12,https://www.getresponse.com/pricing
-gumloop,Gumloop,automation,97,"per month, 30,000 credits (Starter)",true,2026-07-01,https://www.gumloop.com/pricing
-happierleads,Happierleads,crm,99,per month for 300 identified visitors,false,2026-07-10,https://happierleads.com/pricing
-hubspot,HubSpot,crm,15,"per month per seat, Starter, billed annually",true,2026-06-12,https://www.hubspot.com/pricing/marketing
-jasper,Jasper,ai-writing,39,"per month per seat, billed annually",false,2026-06-12,https://www.jasper.ai/pricing
-lindy,Lindy,automation,50,"per month, 5,000 credits (Pro)",true,2026-07-01,https://www.lindy.ai/pricing
-mailchimp,Mailchimp,email-marketing,13,"per month, 500 contacts, billed monthly",true,2026-06-12,https://mailchimp.com/pricing/marketing/
-make,Make,automation,9,"per month, 10,000 credits, billed annually",true,2026-07-10,https://www.make.com/en/pricing
-monday,monday.com,productivity,9,"per month per seat, billed annually (3-seat minimum)",true,2026-06-12,https://monday.com/pricing
-moosend,Moosend,email-marketing,9,"per month, 500 subscribers, billed annually",false,2026-06-12,https://moosend.com/pricing
-n8n,n8n,automation,26,"per month, 2,500 executions (Cloud Starter, billed annually)",true,2026-07-01,https://n8n.io/pricing/
-pipedrive,Pipedrive,crm,14,"per month per seat, billed annually",false,2026-06-12,https://www.pipedrive.com/pricing
-respond-io,respond.io,whatsapp,79,"per month, 5 users (Starter, billed annually)",false,2026-07-01,https://respond.io/pricing
-retell,Retell AI,voice-ai,0,"pay as you go, ~$0.07-0.13 per minute all-in",true,2026-07-01,https://www.retellai.com/pricing
-smartlead,Smartlead,email-marketing,39,per month,false,2026-08-09,https://www.smartlead.ai/pricing
-synthflow,Synthflow AI,voice-ai,29,"per month, 50 minutes included on entry plan",false,2026-07-01,https://synthflow.ai/pricing
-systeme-io,Systeme.io,all-in-one,27,"per month, billed annually",true,2026-06-12,https://systeme.io/pricing
-vapi,Vapi,voice-ai,0,"pay as you go, $0.05/min platform fee + provider costs",true,2026-07-01,https://vapi.ai/pricing
-wati,Wati,whatsapp,49,"per month, 5 users (Growth, billed annually)",false,2026-07-01,https://www.wati.io/pricing/
-zapier,Zapier,automation,20,"per month, 750 tasks, billed annually",true,2026-06-12,https://zapier.com/pricing
+activecampaign,ActiveCampaign,email-marketing,15,"per month, 1,000 contacts, billed annually",false,2026-08-25,https://www.activecampaign.com/pricing
+aisensy,AiSensy,whatsapp,16,"per month (Basic ₹1,500; INR converted to approximate USD at the 2026-08-24 ECB reference rate)",true,2026-08-25,https://aisensy.com/pricing
+brevo,Brevo,email-marketing,9,"per month, 5,000 emails; $9 monthly or $8.08 with annual billing",true,2026-08-25,https://www.brevo.com/pricing/
+clickup,ClickUp,productivity,7,"per month per seat, billed annually",true,2026-08-25,https://clickup.com/pricing
+gallabox,Gallabox,whatsapp,112,"per month (Basic, billed annually; Meta message fees billed separately)",false,2026-08-25,https://gallabox.com/pricing
+getresponse,GetResponse,email-marketing,19,"per month, 1,000 contacts; annual prepay saves 18%",false,2026-08-25,https://www.getresponse.com/pricing
+gumloop,Gumloop,automation,37,"per month, 20,000 included credits (Pro)",false,2026-08-25,https://www.gumloop.com/pricing
+happierleads,Happierleads,crm,99,per month for 300 identified visitors,false,2026-08-25,https://happierleads.com/pricing
+hubspot,HubSpot,crm,7,"per month per seat, Starter, annual payment; current new-customer offer",true,2026-08-25,https://www.hubspot.com/pricing/marketing
+jasper,Jasper,ai-writing,59,"per month per seat, billed annually",false,2026-08-25,https://www.jasper.ai/pricing
+lindy,Lindy,automation,29.99,"per month per user, 3,000 credits (Plus)",false,2026-08-25,https://www.lindy.ai/pricing
+mailchimp,Mailchimp,email-marketing,11,"per month, 500 contacts; regular Essentials price rounded from $10.56",true,2026-08-25,https://mailchimp.com/pricing/marketing/
+make,Make,automation,9,"per month, 10,000 credits, billed annually",true,2026-08-25,https://www.make.com/en/pricing
+monday,monday.com,productivity,9,"per month per seat, billed annually (3-seat minimum)",true,2026-08-25,https://monday.com/pricing
+moosend,Moosend,email-marketing,7,"per month, 500 subscribers, billed annually",false,2026-08-25,https://moosend.com/pricing
+n8n,n8n,automation,23,"per month, 2,500 executions (Cloud Starter €20, billed annually; approximate USD)",true,2026-08-25,https://n8n.io/pricing/
+pipedrive,Pipedrive,crm,14,"per month per seat, billed annually",false,2026-08-25,https://www.pipedrive.com/pricing
+respond-io,respond.io,whatsapp,79,"per month, 5 users (Starter, billed annually)",false,2026-08-25,https://respond.io/pricing
+retell,Retell AI,voice-ai,0,"pay as you go, $0.07-$0.31 per minute for AI Voice Agents",true,2026-08-25,https://www.retellai.com/pricing
+smartlead,Smartlead,email-marketing,39,per month,false,2026-08-25,https://www.smartlead.ai/pricing
+synthflow,Synthflow AI,voice-ai,2500,"per month equivalent of the $30,000 annual Enterprise contract minimum",false,2026-08-25,https://synthflow.ai/pricing
+systeme-io,Systeme.io,all-in-one,17,"per month, monthly billing",true,2026-08-25,https://systeme.io/pricing
+vapi,Vapi,voice-ai,0,"pay as you go, $0.05/min platform fee + provider costs",true,2026-08-25,https://vapi.ai/pricing
+wati,Wati,whatsapp,58,"per month, 3 users and 500 active contacts (Growth R$299, billed annually; approximate USD)",false,2026-08-25,https://www.wati.io/pricing/
+zapier,Zapier,automation,20,"per month, 2,000 tasks, billed annually",true,2026-08-25,https://zapier.com/pricing
