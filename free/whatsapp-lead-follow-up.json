@@ -1,9 +1,9 @@
 {
-  "name": "WhatsApp Lead Follow-Up — reply to every lead in under 60 seconds",
+  "name": "WhatsApp Lead Follow-Up — Wati reference workflow",
   "nodes": [
     {
       "parameters": {
-        "content": "## WhatsApp Lead Follow-Up (free)\n\nAnswers every new lead on WhatsApp in seconds, logs it, and sends one polite follow-up after 24h.\n\n**Setup (10 min):**\n1. Point your website form / ad platform / landing page webhook to the Webhook node URL (POST).\n2. In both HTTP Request nodes, paste your WhatsApp API key (Wati shown; respond.io/AiSensy work the same — swap the URL).\n3. Create a WhatsApp *template message* in your provider dashboard named `lead_instant_reply` and `lead_follow_up_24h`, approve them with Meta.\n4. Connect Google Sheets credentials and pick a spreadsheet.\n\n**Expected payload:** `{ \"name\": \"...\", \"phone\": \"+15551234567\", \"source\": \"website\", \"message\": \"...\" }`\n\nFull version with reply detection, day 1/3/7 cadence, lead scoring and missed-call recovery:\nhttps://stackpick-b8s.pages.dev/templates/\n\nWhich WhatsApp platform to pick (compared with real pricing):\nhttps://stackpick-b8s.pages.dev/vs/wati-vs-respond-io/",
+        "content": "## WhatsApp Lead Follow-Up (free reference workflow)\n\nExample intake → Wati template request → Google Sheet → reply check before one follow-up after 24 hours.\n\nRequires approved templates, permission to contact the recipient, Wati API credentials and a configured Google Sheet. Other providers need their own request and response adapters. No response-time or delivery guarantee. Test before enabling.\n\nExpected payload: {\"name\":\"...\",\"phone\":\"+15551234567\",\"source\":\"website\",\"message\":\"...\"}\n\nTemplates: lead_instant_reply and lead_follow_up_24h, both with a name variable. Reply history must have messages.items with boolean owner and valid created/timestamp values. Empty, unknown or potentially incomplete history stops the workflow.\n\nhttps://trystackpick.com/templates/",
         "height": 540,
         "width": 420
       },
@@ -11,7 +11,10 @@
       "name": "Setup notes",
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
-      "position": [-720, -160]
+      "position": [
+        -720,
+        -160
+      ]
     },
     {
       "parameters": {
@@ -23,7 +26,10 @@
       "name": "New lead (webhook)",
       "type": "n8n-nodes-base.webhook",
       "typeVersion": 2,
-      "position": [-240, 80],
+      "position": [
+        -240,
+        80
+      ],
       "webhookId": "lead-intake"
     },
     {
@@ -68,7 +74,10 @@
       "name": "Normalize lead",
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
-      "position": [-20, 80]
+      "position": [
+        -20,
+        80
+      ]
     },
     {
       "parameters": {
@@ -96,7 +105,10 @@
       "name": "Send instant WhatsApp reply",
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
-      "position": [200, 80]
+      "position": [
+        200,
+        80
+      ]
     },
     {
       "parameters": {
@@ -128,7 +140,10 @@
       "name": "Log lead to sheet",
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.5,
-      "position": [420, 80]
+      "position": [
+        420,
+        80
+      ]
     },
     {
       "parameters": {
@@ -139,7 +154,10 @@
       "name": "Wait 24 hours",
       "type": "n8n-nodes-base.wait",
       "typeVersion": 1.1,
-      "position": [640, 80],
+      "position": [
+        640,
+        80
+      ],
       "webhookId": "wait-24h-lead"
     },
     {
@@ -168,11 +186,14 @@
       "name": "Send 24h follow-up",
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
-      "position": [860, 80]
+      "position": [
+        860,
+        80
+      ]
     },
     {
       "parameters": {
-        "content": "**Tip:** pause the follow-up for leads that already replied.\nIn Wati: add the contact to a 'replied' list via their automation, or check `GET /api/v1/getMessages` before this node. The paid pack ships this reply-check plus a day 1/3/7 cadence prebuilt.",
+        "content": "The 24-hour follow-up now requires verified reply history. An inbound reply stops the cadence; unknown, empty or potentially incomplete history raises an error. Review Wati pagination/fields and use test numbers before enabling.",
         "height": 180,
         "width": 320
       },
@@ -180,24 +201,171 @@
       "name": "Reply-check tip",
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
-      "position": [820, -140]
+      "position": [
+        820,
+        -140
+      ]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "=https://live-mt-server.wati.io/YOUR_TENANT_ID/api/v1/getMessages/{{ $('Normalize lead').item.json.phone }}?pageSize=100&pageNumber=1",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer YOUR_WATI_API_KEY"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "verify-replies-before-followup",
+      "name": "Check replies (24h)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1480,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Reference Wati adapter: stop instead of treating missing/unrecognized history as no reply.\nconst lead = $('Normalize lead').first().json;\nconst response = $input.first().json;\nconst msgs = response.messages && response.messages.items;\nconst since = Date.parse(lead.received_at);\nif (!Number.isFinite(since) || !Array.isArray(msgs) || response.result === false) {\n  throw new Error('Reply history could not be verified. Check the Wati response adapter before sending.');\n}\nif (msgs.length === 0 || msgs.length >= 100 || response.messages.hasMore === true ||\n    (Number.isFinite(response.messages.totalCount) && response.messages.totalCount > msgs.length)) {\n  throw new Error('Reply history is empty or may be incomplete. Review/paginate it before sending.');\n}\nfunction messageTime(m) {\n  const raw = m.created ?? m.timestamp;\n  if (typeof raw === 'number') return raw < 100000000000 ? raw * 1000 : raw;\n  if (typeof raw === 'string' && /^\\d+(\\.\\d+)?$/.test(raw)) {\n    const n = Number(raw); return n < 100000000000 ? n * 1000 : n;\n  }\n  return typeof raw === 'string' ? Date.parse(raw) : NaN;\n}\nlet replied = false;\nfor (const m of msgs) {\n  const at = messageTime(m);\n  if (!Number.isFinite(at) || typeof m.owner !== 'boolean') {\n    throw new Error('Unknown message timestamp/direction. Validate the Wati response mapping before sending.');\n  }\n  if (m.owner === false && at > since) replied = true;\n}\nreturn [{ json: { ...lead, replied } }];\n"
+      },
+      "id": "classify-replies-before-followup",
+      "name": "Replied? (24h)",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1700,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "no-reply",
+              "leftValue": "={{ $json.replied }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "false",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "allow-followup-with-verified-history",
+      "name": "No reply yet (24h)?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        1920,
+        300
+      ]
     }
   ],
   "connections": {
     "New lead (webhook)": {
-      "main": [[{ "node": "Normalize lead", "type": "main", "index": 0 }]]
+      "main": [
+        [
+          {
+            "node": "Normalize lead",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     },
     "Normalize lead": {
-      "main": [[{ "node": "Send instant WhatsApp reply", "type": "main", "index": 0 }]]
+      "main": [
+        [
+          {
+            "node": "Send instant WhatsApp reply",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     },
     "Send instant WhatsApp reply": {
-      "main": [[{ "node": "Log lead to sheet", "type": "main", "index": 0 }]]
+      "main": [
+        [
+          {
+            "node": "Log lead to sheet",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     },
     "Log lead to sheet": {
-      "main": [[{ "node": "Wait 24 hours", "type": "main", "index": 0 }]]
+      "main": [
+        [
+          {
+            "node": "Wait 24 hours",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     },
     "Wait 24 hours": {
-      "main": [[{ "node": "Send 24h follow-up", "type": "main", "index": 0 }]]
+      "main": [
+        [
+          {
+            "node": "Check replies (24h)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Check replies (24h)": {
+      "main": [
+        [
+          {
+            "node": "Replied? (24h)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Replied? (24h)": {
+      "main": [
+        [
+          {
+            "node": "No reply yet (24h)?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "No reply yet (24h)?": {
+      "main": [
+        [
+          {
+            "node": "Send 24h follow-up",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        []
+      ]
     }
   },
   "settings": {
